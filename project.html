@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Room Design!</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky src="https://images.unsplash.com/photo-1503480207415-fdddcc21d5fc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2t5JTIwdGV4dHVyZXxlbnwwfHwwfHx8MA%3D%3D"></a-sky>
+
+      <a-plane id="ground" src="https://png.pngtree.com/thumb_back/fh260/background/20230814/pngtree-wood-grain-texture-wooden-flooring-design-with-wooden-floor-textures-image_13051712.jpg" position="0 0 0" rotation="-90 0 0" width="20" height="10"></a-plane>
+
+      <a-plane id="carpet" src="https://media.istockphoto.com/id/894206398/photo/rug-texture-background.webp?b=1&s=170667a&w=0&k=20&c=8dmqxkHZjhtisO_eOP7Q46KY99R7JjMfWwzIddy-Kh4=" position="0 0.1 0.5" rotation="-90 0 0" width="8" height="5"></a-plane>
+
+      <a-box id="wall" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzwpk6hjbcxpTr8TZShcL8B23dmwwS90x9g&usqp=CAU" position="0 6.5 -4.5" width="20" height="13"></a-box>
+
+      <a-plane id="wall-poster-left" src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/k/w/v/small-pos-284-a4-chennai-central-poster-fully-filmy-original-imaggxya8yfydsah.jpeg?q=90" position="-5 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+      <a-plane id="wall-poster-middle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEwGACf1vpVVK4Mt_eyapOGicZtD82rozBng&usqp=CAU" position="0 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+      <a-plane id="wall-poster-right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmgL25VnwHiKYRwmZRO4rrB2CeqUGKHWRTJA&usqp=CAU" position="5 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+      <a-cylinder src="https://static.vecteezy.com/system/resources/previews/005/498/132/non_2x/the-blue-chair-fabric-texture-free-photo.jpg" radius="1.2" position="6.5 -0.4 0">
+        <a-cylinder src="https://static.vecteezy.com/system/resources/previews/005/498/132/non_2x/the-blue-chair-fabric-texture-free-photo.jpg" radius="0.2" position="0 1 0" height="1.2"></a-cylinder>
+        <a-cylinder src="https://static.vecteezy.com/system/resources/previews/005/498/132/non_2x/the-blue-chair-fabric-texture-free-photo.jpg" position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2"></a-cylinder>
+        <a-cylinder src="https://static.vecteezy.com/system/resources/previews/005/498/132/non_2x/the-blue-chair-fabric-texture-free-photo.jpg" position="0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2"></a-cylinder>
+      </a-cylinder>
+
+      <a-cylinder src="https://static.vecteezy.com/system/resources/previews/005/498/132/non_2x/the-blue-chair-fabric-texture-free-photo.jpg" radius="1.2" position="-6.5 -0.4 0">
+        <a-cylinder src="https://static.vecteezy.com/system/resources/previews/005/498/132/non_2x/the-blue-chair-fabric-texture-free-photo.jpg" radius="0.2" position="0 1 0" height="1.2"></a-cylinder>
+        <a-cylinder src="https://static.vecteezy.com/system/resources/previews/005/498/132/non_2x/the-blue-chair-fabric-texture-free-photo.jpg" position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2"></a-cylinder>
+        <a-cylinder src="https://static.vecteezy.com/system/resources/previews/005/498/132/non_2x/the-blue-chair-fabric-texture-free-photo.jpg" position="-0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2"></a-cylinder>
+      </a-cylinder>
+
+      <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbkPrTCOv_MmGcUez0XmqbP9bwyuXjr6coOA&usqp=CAU" width="9" height="3.5" position="0 2 0" rotation="90 0 0" depth="0.2">
+        <a-cylinder src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbkPrTCOv_MmGcUez0XmqbP9bwyuXjr6coOA&usqp=CAU" height="2" radius="0.8" rotation="90 0 0" position="0 0 1"></a-cylinder>
+      </a-box>
+
+      <a-cone color="black" position="0 7.5 0" radius-top="0.5" radius-bottom="2">
+        <a-torus color="beige" position="0 -0.9 0" radius="0.9"></a-torus>
+        <a-cylinder color="black" radius="0.15" height="4" position="0 2 0"></a-cylinder>
+      </a-cone>
+
+      <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15"></a-camera>
+    </a-scene>
+  </body>
+</html>
